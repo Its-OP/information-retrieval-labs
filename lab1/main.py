@@ -1,8 +1,9 @@
 import os
 
+directory_path = input("Please enter the path to the directory: ")
+
 while True:
     file_path = input("Please enter the path to the text file: ")
-    directory_path = input("Please enter the path to the directory: ")
 
     with open(file_path, 'r') as file:
         content = file.read()
