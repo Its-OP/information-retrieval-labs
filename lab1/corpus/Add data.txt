@@ -1,0 +1,5 @@
+You add data to Elasticsearch as JSON objects called documents. Elasticsearch stores these documents in searchable indices.
+
+For time series data, such as logs and metrics, you typically add documents to a data stream made up of multiple auto-generated backing indices.
+
+A data stream requires an index template that matches its name. Elasticsearch uses this template to configure the stream’s backing indices. Documents sent to a data stream must have a @timestamp field.
