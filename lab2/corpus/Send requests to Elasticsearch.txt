@@ -1,0 +1,1 @@
+You send data and other requests to Elasticsearch using REST APIs. This lets you interact with Elasticsearch using any client that sends HTTP requests, such as curl. You can also use Kibana’s console to send requests to Elasticsearch.

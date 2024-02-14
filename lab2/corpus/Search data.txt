@@ -1,0 +1,2 @@
+Indexed documents are available for search in near real-time. The following search matches all log entries in logs-my_app-default and sorts them by @timestamp in descending order.
+By default, the hits section of the response includes up to the first 10 documents that match the search. The _source of each hit contains the original JSON object submitted during indexing.

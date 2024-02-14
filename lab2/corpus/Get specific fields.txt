@@ -1,0 +1,2 @@
+Parsing the entire _source is unwieldy for large documents. To exclude it from the response, set the _source parameter to false. Instead, use the fields parameter to retrieve the fields you want.
+The response contains each hit’s fields values as a flat array.

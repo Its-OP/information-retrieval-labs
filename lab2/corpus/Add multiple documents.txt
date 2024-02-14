@@ -1,0 +1,1 @@
+Use the _bulk endpoint to add multiple documents in one request. Bulk data must be newline-delimited JSON (NDJSON). Each line must end in a newline character (\n), including the last line.
