@@ -8,6 +8,8 @@ services:
       - node.name=elasticsearch
       - cluster.name=es-docker-cluster
       - discovery.type=single-node
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.enabled=false
     ports:
       - 9200:9200
       - 9300:9300

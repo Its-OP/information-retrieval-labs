@@ -1,0 +1,11 @@
+﻿create '{ "Source": "ProductService", "Body": "The method has been reached", "Level": 0 }'
+create '{ "Source": "ProductService", "Body": "The id provided within request is empty", "Level": 3 }'
+create '{ "Source": "AnArbitraryHandlerWithAReallyLongName", "Body": "An exception has been thrown", "Level": 4 }'
+
+get
+get source%exact:ProductService
+get level:>2 level:<4
+get source%fuzzy:HandlerWithAReallyLongName
+
+delete
+get
