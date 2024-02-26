@@ -1,11 +1,13 @@
-﻿create '{ "Source": "ProductService", "Body": "The method has been reached", "Level": 0 }'
-create '{ "Source": "ProductService", "Body": "The id provided within request is empty", "Level": 3 }'
-create '{ "Source": "AnArbitraryHandlerWithAReallyLongName", "Body": "An exception has been thrown", "Level": 4 }'
+﻿create '{ "Source": "ProductService", "Body": "The method has been reached", "Level": 0, "CreatedAt": "2024-02-26T17:22:06.350Z" }'
+create '{ "Source": "ProductService", "Body": "The id provided within request is empty", "Level": 3, "CreatedAt": "2024-02-25T17:22:06.350Z" }'
+create '{ "Source": "AnArbitraryHandlerWithAReallyLongName", "Body": "An exception has been thrown", "Level": 4, "CreatedAt": "2024-02-24T17:22:06.350Z" }'
 
 get
-get source%exact:ProductService
-get level:>2 level:<4
-get source%fuzzy:HandlerWithAReallyLongName
+get id:exact:92cba139-e538-4404-bf95-e05d26838b58
+get source:exact:ProductService
+get level:greater:2 level:less:4
+get createdAt:greater:2024-02-25T15:22:06.350Z level:greater:1
+get source:fuzzy:HandlerWithAReallyLongName
 
-delete
+delete 92cba139-e538-4404-bf95-e05d26838b58
 get

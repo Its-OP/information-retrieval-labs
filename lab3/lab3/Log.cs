@@ -2,4 +2,4 @@
 
 public record Log(string Source, string Body, int Level, DateTime CreatedAt, Guid Id);
 
-public record LogArguments(string Source, string Body, int Level);
+public record LogArguments(string Source, string Body, int Level, DateTime CreatedAt);
