@@ -107,7 +107,7 @@ static async Task<string> ProcessGetDocument(IElasticClient client, params strin
                 if (filter.CreatedAtGreaterThen != DateTime.MinValue)
                     range = range.GreaterThan(filter.CreatedAtGreaterThen);
                 
-                if (filter.LevelLessThen != int.MaxValue)
+                if (filter.CreatedAtLessThen != DateTime.MaxValue)
                     range = range.LessThan(filter.CreatedAtLessThen);
 
                 return range;
