@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  elasticsearch:
+    build: .
+    container_name: elasticsearch
+    environment:
+      - node.name=elasticsearch
+      - cluster.name=es-docker-cluster
+      - discovery.type=single-node
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    mem_limit: 6g
+    ports:
+      - 9200:9200
+      - 9300:9300
+    volumes:
+      - esdata1:/usr/share/elasticsearch/data
+
+volumes:
+  esdata1:

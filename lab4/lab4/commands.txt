@@ -1,0 +1,13 @@
+﻿create '{ "Source": "ProductService", "ErrorMessage": "Failed to parse HTML document", "Html": "<!DOCTYPE html><html lang=\"en\"><head> <meta charset=\"UTF-8\"> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Simple HTML Document</title></head><body> <h1>Hello, World!</h1> <p>This is a simple HTML document.</p></body></html>", "UserInput": "Сумарізуй сторінку в 2 речення", "CreatedAt": "2024-02-26T17:22:06.350Z" }'
+
+create '{ "Source": "ProductService", "ErrorMessage": "Page not found", "Html": "", "UserInput": "О чому ця сторінка?", "CreatedAt": "2024-02-26T17:22:06.350Z" }'
+
+create '{ "Source": "AnArbitraryHandlerWithAReallyLongName", "ErrorMessage": "Could not access the page: Unauthorized", "Html": "<!DOCTYPE html><html lang=\"en\"><head> <meta charset=\"UTF-8\"> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Unauthorized Access</title> <style> body { font-family: Arial, sans-serif; text-align: center; padding: 50px; } h1 { color: #d9534f; } p { color: #333; } </style></head><body> <h1>401 Unauthorized</h1> <p>You do not have permission to view this directory or page using the credentials that you supplied.</p></body></html>", "UserInput": "На які джерела посилається автор статті?", "CreatedAt": "2024-02-24T17:22:06.350Z" }'
+
+get
+get errorMessage:match:Cannot reach
+get html:match:Hello everyone!
+get userInput:match:посилатись
+
+delete 92cba139-e538-4404-bf95-e05d26838b58
+get
